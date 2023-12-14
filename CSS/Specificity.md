@@ -69,3 +69,7 @@ CSS:
 ```
 
 Now we could have just had `#specificity` to override the property values from `#example`, but wanted to make it clear how the specificity score is calculated. The more specific we get with our selectors, the higher the specificity score.
+
+## Resources
+
+[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
