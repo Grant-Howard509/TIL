@@ -46,7 +46,7 @@ div.addEventListener('click', (event) =>  {
 
 From here, we figure out what button was click either by `event.target.className` or any other identifier inside the `target` object.
 
-## Resources used:
+## Resources:
 
 1. [freecodecamp](https://www.freecodecamp.org/news/event-delegation-javascript/)
 2. [Javascript Info](https://javascript.info/event-delegation)
