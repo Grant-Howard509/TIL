@@ -75,3 +75,7 @@ What would happen if we did the following:
 ```
 
 This statement is valid inside of JS despite the keyword `this` not being inside of an object. However, the `this.tail` keyword would be undefined since property `tail` does not exist.
+
+## Resources
+
+[Javascript Info](https://javascript.info/object-methods)
