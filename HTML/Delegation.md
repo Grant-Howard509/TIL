@@ -1,30 +1,30 @@
 # HTML Delegation
 
-Event delegation is where events, such as a click event for example, are handled higher up on the DOM tree rather than where the event was first orginated from. We are able to handle events higher in the DOM hierarchy because of a concept known as a event bubbling.
+Event delegation is where events, such as a click event for example, are handled higher up on the DOM tree rather than where the event was first originated from. We are able to handle events higher in the DOM hierarchy because of a concept known as event bubbling.
 
 Here is an example of event bubbling
 
 ```
 <div>
-    <span>
-        <button>Click Me</button>
-    </span>
+   <span>
+       <button>Click Me</button>
+   </span>
 </div>
 ```
 
-Event bubbling is this idea that events are traversed upward in the DOM tree until we reach root HTML tag. So, in our example we have a `div` tag as our ancestor, `span` as a child of `div` but is a parent of `button`. Once a user triggers an event, such as clicking `button`, the event "bubbles" up the DOM tree where both `span` and `div` will recieve the triggered event.
+Event bubbling is this idea that events are traversed upward in the DOM tree until we reach the root HTML tag. So, in our example we have a `div` tag as our ancestor, `span` as a child of `div` but is a parent of `button`. Once a user triggers an event, such as clicking `button`, the event "bubbles" up the DOM tree where both `span` and `div` will receive the triggered event.
 
 Consider the following example:
 
 ```
 <div>
-    <span>
-        <button>Click Me 1</button>
-        <button>Click Me 2</button>
-        <button>Click Me 3</button>
-        <button>Click Me 4</button>
-        <button>Click Me 5</button>
-    </span>
+   <span>
+       <button>Click Me 1</button>
+       <button>Click Me 2</button>
+       <button>Click Me 3</button>
+       <button>Click Me 4</button>
+       <button>Click Me 5</button>
+   </span>
 </div>
 ```
 
@@ -35,12 +35,13 @@ To do this, we use a query selector on `div`, and then find whether a button tri
 ```
 const div = querySelector('div');
 
+
 div.addEventListener('click', (event) =>  {
-    if(event.target.tagName === 'BUTTON') {
-        console.log('Button was click');
-    }else {
-        console.log('Not a button event');
-    }
+   if(event.target.tagName === 'BUTTON') {
+       console.log('Button was click');
+   }else {
+       console.log('Not a button event');
+   }
 });
 ```
 
