@@ -24,9 +24,6 @@ What determines whether a node is a parent node, lets look at the following exam
       <body>
           <h1> Heading tag </h1>
 
-
-
-
           <ul>
               <li> item 1 </li>
               <li> item 2 </li>
@@ -49,9 +46,6 @@ Once we find the parent node using either `parentNode` or `parentElement` proper
 
 ```
   const h1 = document.getElementsByTagName('h1')[0];
-
-
-
 
   console.log(h1.parentNode.parentNode); // Gets the grandparent or 'html'
 ```
@@ -87,14 +81,8 @@ For example:
 HTML:
   <h1> This is a <strong>HUGE</strong> sale!</h1>
 
-
-
-
 JS:
   const h1 = document.getElementsByTagName('h1')[0];
-
-
-
 
   for (let elements of h1.childNodes) {
       console.log(elements);
@@ -119,9 +107,7 @@ Just like `firstChild` and `lastChild`, `previousSibling` and `nextSibling` retu
 ```
    const ul = document.getElementsByTagName('ul')[0];
 
-
    const item2 = ul.children[1];
-
 
    console.log(item2.previousElementSibling); // returns 'item1'
    console.log(item2.nextElementSibling); // returns 'item3'
