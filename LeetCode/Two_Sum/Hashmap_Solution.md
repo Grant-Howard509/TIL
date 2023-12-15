@@ -5,7 +5,7 @@ Iterate through the array and find the complement between the target and the cur
 ## Code
 
 ```
-    const twoSum = (nums. target) => {
+    const twoSum = (nums, target) => {
         let map = new Map();
 
         for(let i = 0; i < nums.length; i++) {
