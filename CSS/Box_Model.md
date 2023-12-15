@@ -99,3 +99,7 @@ Another note is that inline boxes will overlap other box elements vertically pus
 ## Using inline-block
 
 The display type `inline-block` allows an inline element to have some `block` level features. All inline-block elements will still align along side one another, but they will also have a `width` and `height` properties. Also, these elements will be able to push elements away both horizontally and verticlaly when the box size changes.
+
+## Resources
+
+- [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
