@@ -126,3 +126,8 @@ Just like `firstChild` and `lastChild`, `previousSibling` and `nextSibling` retu
    console.log(item2.previousElementSibling); // returns 'item1'
    console.log(item2.nextElementSibling); // returns 'item3'
 ```
+
+## Resources
+
+1. [Digital Ocean Tutorial](https://www.digitalocean.com/community/tutorials/how-to-traverse-the-dom)
+2. [My codepen.io](https://codepen.io/Havic412/pen/poGXaPq)
