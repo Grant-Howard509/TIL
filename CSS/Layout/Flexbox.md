@@ -121,3 +121,15 @@ The property `flex` used above is a shorthand that addresses 3 different propert
 Properties `justify-content` and `align-items` are used to align flex items both across the main/cross axes. The `justify-content` property is used for the main axis and the `align-items` property is for the `cross-axis`.
 
 ## Ordering Flex Items
+
+The property `order` is able to order the flex-items across the main axis regardless of the DOM placement of the given flex items. Every flex item is given a order value from 0-n (n being the number of items across the main axis in a given direction). Changing the order of an item changes its location on the axis.
+
+Note: this only changes the visula representation of the element order, not the tab ordering.
+
+## Nested Flex Boxes
+
+It is possible to add flexbox elements inside other flexbox elements to create complex layouts.
+
+## Resources
+
+- [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
