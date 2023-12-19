@@ -18,3 +18,7 @@ A fixed window is when we have a predefined window size that stays contant as we
 ## Variable Window
 
 A window size can change in size given under certain conditions. The window is also maintained with two pointers containing the indices of the current window representing teh start/end of the subarray.
+
+## Resource
+
+- [LeetCode Dicussion](https://leetcode.com/discuss/interview-question/3722472/mastering-sliding-window-technique-a-comprehensive-guide)
