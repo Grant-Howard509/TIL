@@ -15,6 +15,39 @@
 9. If the `middelIndex` equal's the target, we have found our solution and return its index.
 10. If `middleIndex` never equals `target`, we can assume `target` does not exist in the array and return -1;
 
+## Code
+
+```
+const search = (nums, target) => {
+    if(nums.length === 0) return -1;
+
+    let startIndex = 0;
+    let endIndex = nums.length - 1;
+    let result = -1;
+
+    while(startIndex <= endIndex) {
+
+        let middleIndex = Math.floor((startIndex + endIndex) / 2);
+
+        if(nums[middleIndex] === target) {
+            result = middleIndex;
+            return result;
+        }
+
+        if(nums[middleIndex] < target) {
+            startIndex = middleIndex + 1;
+        }
+
+        if(nums[middleIndex] > target) {
+            endIndex = middleIndex - 1;
+        }
+
+    }
+
+    return result;
+};
+```
+
 # Resource
 
 - [Medium](https://medium.com/@jeffrey.allen.lewis/javascript-algorithms-explained-binary-search-25064b896470)
